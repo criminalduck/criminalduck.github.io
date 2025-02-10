@@ -28,10 +28,10 @@ function searchId(input) {
 // Load data on page load
 let projData = []
 document.addEventListener("DOMContentLoaded", async () => {
-    projData = await loadJSON("data-json/proj-data.json");
+    projData = await loadJSON("data/proj-data.json");
     if (projData.length > 0) {
         displayItems(projData, visibleItems);
-        displayIDs = await loadJSON("data-json/display-ids.json");
+        displayIDs = await loadJSON("data/display-ids.json");
         displayIDs.length > 0 ? initialiseDisplay() : loadDisplayFailed();
     } else
         loadProjListFailed();
