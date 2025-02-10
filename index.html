@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.css" integrity="sha512-GmZYQ9SKTnOea030Tbiat0Y+jhnYLIpsGAe6QTnToi8hI2nNbVMETHeK4wm4MuYMQdrc38x+sX77+kVD01eNsQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/style.css">
+    <script defer src="js/main.js"></script>
+    <!-- <link rel="shortcut icon" href="images/" type="images/x"> -->
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="container">
+            <a class="logo" href="#home"><img src="images/logo.png" alt="logo"> Portfolio</a>
+            <div class="main-menu">
+                <ul>
+                    <li><a class="btn btn-secondary" href="#home"><i class="fa-solid fa-house"></i>Home</a></li>
+                    <li><a class="btn btn-secondary" href="#about"><i class="fa-solid fa-user"></i>About</a></li>
+                    <li><a class="btn btn-secondary" href="#projects"><i class="fa-solid fa-folder"></i>Projects</a></li>
+                    <li></li>
+                    <li><a class="btn btn-secondary" href="#" target="_blank"><i class="fa-brands fa-youtube"></i></a></li>
+                    <li><a class="btn btn-secondary" href="#" target="_blank"><i class="fa-brands fa-patreon"></i></a></li>
+                    <li><a class="btn btn-secondary" href="#" target="_blank"><i class="fa-brands fa-steam"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Home -->
+    <section id="home" class="home">
+        <div class="container">
+            <h1>TOP PROJECTS</h1>
+            <button id="slider-prev" class="slider-btn prev"><i class="fa-solid fa-arrow-left"></i></button>
+            <ul id="display-slider" class="display-slider">
+
+                <li class="slider-item current">
+                    <div class="bar">
+                        <p class="main-tag">UNITY</p>
+                        <h1>Project Title</h1>
+                    </div>
+                    <div class="row">
+                        <div class="column">
+                            <p>Academic paragraphs are usually between 200 and 300 words long (they vary more than this but it is a useful guide). The important thing is that they should be long enough to contain all the above material. Only move onto a new paragraph if you are making a new point.</p>
+                            <a class="btn btn-tertiary info" href="#"><i class="fa-solid fa-circle-info"></i>More Info</a>
+                        </div>
+                        <div class="column">
+                            <img src="images/tofe-cover-large.png" alt="logo">
+                            <img src="images/tofe-cover-large.png" alt="logo">
+                        </div>
+                    </div>
+                </li>
+
+            </ul>
+            <button id="slider-next" class="slider-btn next"><i class="fa-solid fa-arrow-right"></i></button>
+
+            <ul id="bullet-list" class="bullet-list">
+
+                <li class="bullet is-active"></li>
+                <li class="bullet"></li>
+
+            </ul>
+        </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="about">
+        <div class="container">
+            <h1>ABOUT</h1>
+            <div>
+                <div>
+                    <h2>Studio Name</h2>
+                    <img src="images/tofe-cover-large.png" alt="logo">
+                    <p>Academic paragraphs are usually between 200 and 300 words long (they vary more than this but it is a useful guide). The important thing is that they should be long enough to contain all the above material. Only move onto a new paragraph if you are making a new point.</p>
+                </div>
+                <div>
+                    <h2>Name</h2>
+                    <p>Description Academic paragraphs are usually between 200 and 300 words long (they vary more than this but it is a useful guide). The important thing is that they should be long enough to contain all the above material. Only move onto a new paragraph if you are making a new point.Academic paragraphs are usually between 200 and 300 words long (they vary more than this but it is a useful guide). The important thing is that they should be long enough to contain all the above material. Only move onto a new paragraph if you are making a new point.</p>
+                </div>
+            </div>
+        </div>
+        <div class="socials">
+            <div class="column">
+                <i class="fa-brands fa-youtube"></i>
+                <h3>Youtube</h3>
+            </div>
+            <div class="spacer"></div>
+            <div class="column">
+                <i class="fa-brands fa-patreon"></i>
+                <h3>Patreon</h3>
+            </div>
+            <div class="spacer"></div>
+            <div class="column">
+                <i class="fa-brands fa-steam"></i>
+                <h3>Steam</h3>
+                <a><i class="fa-solid fa-arrow-turn-down-right"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <div class="section-spacer"></div>
+
+    <!-- Projects -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h1>PROJECTS</h1>
+            <div class="toolbar">
+                <div class="main">
+                    <p><i class="fa-solid fa-gear"></i></p>
+                    <a id="dropdown-toggle"><i class="fa-solid fa-caret-right"></i></a>
+                </div>
+                <div class="searchbar">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <input type="text" id="searchInput" placeholder="Search for Projects...">
+                    <button id="clearBtn"><i class="fa-solid fa-circle-xmark"></i></button>
+                </div>
+                <a id="clear-filter" class="btn btn-tertiary"><i class="fa-solid fa-filter-circle-xmark"></i>Clear Filters</a>
+            </div>
+            <div id="filters" class="dropdown">
+                <div>
+                    <h2>Field</h2>
+                    <div>
+                        <ul>
+                            <li><a id="gamedev-filter" class="btn btn-tertiary filter-btn"><i class="fa-solid fa-tag"></i>Games</a></li>
+                        </ul>
+                        <ul>
+                            <li><a id="1-filter" class="btn btn-tertiary filter-btn"><i class="fa-solid fa-tag"></i>Unity</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="spacer"></div>
+                <div>
+                    <h2>Software</h2>
+                    <div>
+                        <ul>
+                            <li><a id="unity-filter" class="btn btn-tertiary filter-btn"><i class="fa-solid fa-tag"></i>Unity</a></li>
+                            <li><a id="4-filter" class="btn btn-tertiary filter-btn"><i class="fa-solid fa-tag"></i>Java</a></li>
+                        </ul>
+                        <ul>
+                            <li><a id="5-filter" class="btn btn-tertiary filter-btn"><i class="fa-solid fa-tag"></i>Unity</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="spacer"></div>
+                <div>
+                    <h2>Languages</h2>
+                    <div>
+                        <ul>
+                            <li><a id="java-filter" class="btn btn-tertiary filter-btn"><i class="fa-solid fa-tag"></i>Java</a></li>
+                        </ul>
+                        <ul>
+                            <li><a id="3-filter" class="btn btn-tertiary filter-btn"><i class="fa-solid fa-tag"></i>Java</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div id="project-list" class="project-list">
+                <div class="project-item">
+                    <div class="column">
+                        <h2>Test</h2>
+                        <p>Description Academic paragraphs are usually between 200 and 300 words long (they vary more than this but it is a useful guide). The important thing is that they should be long enough to contain all the above material.</p>
+                        <a class="btn btn-tertiary" href="#"><i class="fa-solid fa-circle-info"></i>More Info</a>
+                    </div>
+                    <img src="images/default-image.jpg" alt="project-cover">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <section class="footer">
+        <div class="container">
+            <div class="nav">
+                <ul>
+                    <li><a class="btn btn-secondary" href="#" target=”_blank”><i class="fa-brands fa-youtube"></i></a></li>
+                    <li><a class="btn btn-secondary" href="#" target=”_blank”><i class="fa-brands fa-patreon"></i></a></li>
+                    <li><a class="btn btn-secondary" href="#" target=”_blank”><i class="fa-brands fa-steam"></i></a></li>
+                </ul>
+                <ul>
+                    <li><a class="btn btn-secondary" href="#home"><i class="fa-solid fa-house"></i>Home</a></li>
+                    <li><a class="btn btn-secondary" href="#about"><i class="fa-solid fa-user"></i>About</a></li>
+                    <li><a class="btn btn-secondary" href="#projects"><i class="fa-solid fa-folder"></i>Projects</a></li>
+                </ul>
+                <ul><li><p>Contact Us at studio@email.com</p></li></ul>
+            </div>
+            <!--
+            <div class="main">
+                <ul>
+                    <h3>Header</h3>
+                    <li><a class="btn btn-secondary" href="#home">Home</a></li>
+                    <li><a class="btn btn-secondary" href="#about">About</a></li>
+                    <li><a class="btn btn-secondary" href="#projects">Projects</a></li>
+                </ul>
+                <ul>
+                    <h3>Header</h3>
+                    <li><a class="btn btn-secondary" href="#home">Home</a></li>
+                    <li><a class="btn btn-secondary" href="#about">About</a></li>
+                    <li><a class="btn btn-secondary" href="#projects">Projects</a></li>
+                </ul>
+                <ul>
+                    <h3>Header</h3>
+                    <li><a class="btn btn-secondary" href="#home">Home</a></li>
+                    <li><a class="btn btn-secondary" href="#about">About</a></li>
+                    <li><a class="btn btn-secondary" href="#projects">Projects</a></li>
+                </ul>
+            </div>
+            -->
+        </div>
+    </section>
+</body>
+</html>
