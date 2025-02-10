@@ -29,12 +29,13 @@ function searchId(input) {
 let projData = []
 document.addEventListener("DOMContentLoaded", async () => {
     projData = await loadJSON("data/proj-data.json");
-    if (projData.length > 0) {
+    if (projData) {
         displayItems(projData, visibleItems);
         displayIDs = await loadJSON("data/display-ids.json");
         displayIDs.length > 0 ? initialiseDisplay() : loadDisplayFailed();
     } else
         loadProjListFailed();
+        loadDisplayFailed();
 });
 
 
@@ -195,7 +196,7 @@ function createProjectItem(item) {
     div.className = "project-item";
     div.innerHTML = `
         <div class="column">
-            <h2>${item.title}</h2>
+            <h2>${item.title}<span> - ${item.date}</span></h2>
             <p>${item.description}</p>
             <a class="btn btn-tertiary" href="${item.id}.html">
                 <i class="fa-solid fa-circle-info"></i> More Info
