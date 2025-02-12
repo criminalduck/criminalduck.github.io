@@ -30,14 +30,14 @@ let projData = []
 document.addEventListener("DOMContentLoaded", async () => {
     projData = await loadJSON("data/proj-data.json");
     if (projData) {
-        displayItems(projData, visibleItems);
         displayIDs = await loadJSON("data/display-ids.json");
-        displayIDs.length > 0 ? initialiseDisplay() : loadDisplayFailed();
+        displayIDs ? initialiseDisplay() : loadDisplayFailed();
+        displayItems(projData, visibleItems);
+        setToolbar();
     } else
         loadProjListFailed();
         loadDisplayFailed();
 });
-
 
 
 
@@ -70,6 +70,10 @@ function initialiseDisplay() {
     displaySlider.children[currentDisplayIndex].classList.add('current');
 
     cycleDisplay();
+
+    // Click Events for Slider Buttons
+    document.getElementById('slider-prev').addEventListener('click', () => {shiftSlider(-1); resetCycleTimer();});
+    document.getElementById('slider-next').addEventListener('click', () => {shiftSlider(1); resetCycleTimer();});
 }
 
 // Handle Cycling the Display Table
@@ -126,13 +130,13 @@ function createSlideItem(index) {
     const item = document.createElement('li')
     const data = displayData[index];
     item.className = "slider-item";
-    item.style = `url('${data.images[1]}')`;
+    item.style.backgroundImage = `url('${data.images[1] || "default-image.jpg"}')`;
     item.innerHTML = `
-        <div class="bar">
+        <div class="header">
             <p class="main-tag">${data.tags[0].toUpperCase()}</p>
             <h1>${data.title}</h1>
         </div>
-        <div class="row">
+        <div class="main">
             <div class="column">
             <p>${data.description}</p>
             <a class="btn btn-tertiary info" href="${data.id}.html"><i class="fa-solid fa-circle-info"></i>More Info</a>
@@ -146,13 +150,17 @@ function createSlideItem(index) {
     return item;
 }
 
-// Click Events for Slider Buttons
-document.getElementById('slider-prev').addEventListener('click', () => {shiftSlider(-1); resetCycleTimer();});
-document.getElementById('slider-next').addEventListener('click', () => {shiftSlider(1); resetCycleTimer();});
-
 // Handles pop-up for failed load
 function loadDisplayFailed() {
-
+    const slider = document.getElementById('initial-slider');
+    const box = document.createElement('div');
+    box.className = "non-found-error";
+    box.innerHTML = `
+        <p class="icon"><i class="fa-solid fa-circle-exclamation"></i></p>
+        <h1 class="title">! Failed to load Display data !</h1>
+        <p class="sub-text">Try Refreshing the Page</p>
+    `;
+    slider.appendChild(box);
 }
 
 
@@ -280,19 +288,7 @@ function registerFilters() {
         }
     });
 }
-document.addEventListener("DOMContentLoaded", registerFilters);
 
-// Dropdown
-const dropdownBtn = document.getElementById("dropdown-toggle");
-const dropdownMenu = document.getElementById("filters");
-
-document.getElementById("dropdown-toggle").addEventListener('click', () => {
-    dropdownMenu.style.display = (dropdownMenu.style.display === 'flex') ? 'none' : 'flex';
-    dropdownMenu.classList.toggle("show");
-    dropdownBtn.classList.toggle("arrow");
-});
-
-// Searchbar
 function search() {
     const input = document.getElementById("searchInput").value.trim().toLowerCase();
     if (input === "") {
@@ -302,9 +298,21 @@ function search() {
     const results = projData.filter(item => item.title.toLowerCase().includes(input));
     results.length > 0 ? displayItems(results, visibleItems) : noneFound();
 }
-document.getElementById("searchInput").addEventListener("input", search);
 
-document.getElementById("clearBtn").addEventListener("click", () => {
-    document.getElementById("searchInput").value = "";
-    displayItems(projData, visibleItems);
-});
+function setToolbar() {
+    // Dropdown
+    const dropdownBtn = document.getElementById("dropdown-toggle");
+    const dropdownMenu = document.getElementById("filters");
+    document.getElementById("dropdown-toggle").addEventListener('click', () => {
+        dropdownMenu.style.display = (dropdownMenu.style.display === 'flex') ? 'none' : 'flex';
+        dropdownMenu.classList.toggle("show");
+        dropdownBtn.classList.toggle("arrow");
+    });
+    document.addEventListener("DOMContentLoaded", registerFilters);
+    // Searchbar
+    document.getElementById("searchInput").addEventListener("input", search);
+    document.getElementById("clearBtn").addEventListener("click", () => {
+        document.getElementById("searchInput").value = "";
+        displayItems(projData, visibleItems);
+    });
+}

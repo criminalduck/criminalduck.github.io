@@ -1,7 +1,7 @@
 [
   {
     "title": "Item 1",
-    "description": "Description for Item 1",
+    "description": "Description Academic paragraphs are usually between 200 and 300 words long (they vary more than this but it is a useful guide). The important thing is that they should be long enough to contain all the above material. Only move onto a new paragraph if you are making a new point.",
     "images": ["images/tofe-cover-normal.png", "images/tofe-background-normal.png",  "images/tofe-cover-normal.png"],
     "id": "item-1",
     "date": "07/02/24",
