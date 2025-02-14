@@ -6,7 +6,7 @@ async function loadJSON(jsonDir) {
             throw new Error(`HTTP error! Status: ${response.status}`);
         }
         const data = await response.json();
-        console.log(`Loaded JSON: ${jsonDir.slice(3)}`, data);
+        console.log(`Loaded JSON: ${jsonDir.slice(3)}`); // `, data);
         return data;
     } catch (error) {
         console.error(`Error loading JSON from ${jsonDir}:`, error);
@@ -30,13 +30,13 @@ let projData = []
 document.addEventListener("DOMContentLoaded", async () => {
     projData = await loadJSON("data/proj-data.json");
     if (projData) {
-        displayIDs = await loadJSON("data/display-ids.json");
-        displayIDs ? initialiseDisplay() : loadDisplayFailed();
+        // displayIDs = await loadJSON("data/display-ids.json");
+        // displayIDs ? initialiseDisplay() : loadDisplayFailed();
         displayItems(projData, visibleItems);
         setToolbar();
     } else
         loadProjListFailed();
-        loadDisplayFailed();
+        // loadDisplayFailed();
 });
 
 
@@ -152,7 +152,7 @@ function createSlideItem(index) {
 
 // Handles pop-up for failed load
 function loadDisplayFailed() {
-    const slider = document.getElementById('initial-slider');
+    const slider = document.getElementById("initial-slider");
     const box = document.createElement('div');
     box.className = "non-found-error";
     box.innerHTML = `
@@ -162,7 +162,6 @@ function loadDisplayFailed() {
     `;
     slider.appendChild(box);
 }
-
 
 
 
@@ -288,6 +287,7 @@ function registerFilters() {
         }
     });
 }
+document.addEventListener("DOMContentLoaded", registerFilters);
 
 function search() {
     const input = document.getElementById("searchInput").value.trim().toLowerCase();
@@ -296,7 +296,7 @@ function search() {
         return;
     }
     const results = projData.filter(item => item.title.toLowerCase().includes(input));
-    results.length > 0 ? displayItems(results, visibleItems) : noneFound();
+    results.length > 0 ? displayItems(results, visibleItems) : noneProjFound();
 }
 
 function setToolbar() {
@@ -308,7 +308,6 @@ function setToolbar() {
         dropdownMenu.classList.toggle("show");
         dropdownBtn.classList.toggle("arrow");
     });
-    document.addEventListener("DOMContentLoaded", registerFilters);
     // Searchbar
     document.getElementById("searchInput").addEventListener("input", search);
     document.getElementById("clearBtn").addEventListener("click", () => {
