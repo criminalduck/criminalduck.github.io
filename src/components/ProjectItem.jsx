@@ -1,7 +1,7 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {faCircleInfo, faThumbsDown, faThumbsUp} from "@fortawesome/free-solid-svg-icons";
 
-import ProjectsLink from "./ProjectsLink.jsx";
+import ProjectsLink from "./ProjectsLink";
 
 export default function ProjectItem({ item, searchResultId }) {
     return (

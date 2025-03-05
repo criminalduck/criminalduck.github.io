@@ -1,9 +1,9 @@
 import {useEffect, useState} from "react";
 
-import ToolBar from "./ToolBar.jsx";
-import ProjectItem from "./ProjectItem.jsx";
-import ViewMore from "./ViewMore.jsx";
-import ErrorProjNoneFound from "./ErrorProjNoneFound.jsx";
+import ToolBar from "./ToolBar";
+import ProjectItem from "./ProjectItem";
+import ViewMore from "./ViewMore";
+import ErrorProjNoneFound from "./ErrorProjNoneFound";
 
 import projData from "../data/proj-data.json";
 

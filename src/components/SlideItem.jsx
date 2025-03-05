@@ -1,6 +1,7 @@
-import ProjectsLink from "./ProjectsLink.jsx";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faCircleInfo} from "@fortawesome/free-solid-svg-icons";
+
+import ProjectsLink from "./ProjectsLink";
 
 export default function SlideItem({ item, isActive }) {
     return (

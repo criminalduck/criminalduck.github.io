@@ -5,7 +5,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import SlideItem from "./SlideItem";
 import Bullet from "./Bullet";
 import ErrorLoadDisplayFailed from "./ErrorLoadDisplayFailed";
-import Loading from "./Loading.jsx";
+import Loading from "./Loading";
 
 import '../styles/slider.css'
 import projData from "../data/proj-data.json";

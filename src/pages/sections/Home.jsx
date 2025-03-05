@@ -1,8 +1,8 @@
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faGamepad, faGlobe, faRobot} from "@fortawesome/free-solid-svg-icons";
 
-import SurpriseMeBtn from "../../components/SurpriseMeBtn.jsx";
-import ProjectsLink from "../../components/ProjectsLink.jsx";
+import SurpriseMeBtn from "../../components/SurpriseMeBtn";
+import ProjectsLink from "../../components/ProjectsLink";
 
 import '../../styles/home.css';
 import filtersData from "../../data/filters.json";

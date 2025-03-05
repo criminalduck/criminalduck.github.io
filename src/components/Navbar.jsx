@@ -2,8 +2,8 @@ import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCode, faHouse, faUser, faFolder } from "@fortawesome/free-solid-svg-icons";
 
-import SocialButtons from "./SocialButtons.jsx";
-import SurpriseMeBtn from "./SurpriseMeBtn.jsx";
+import SocialButtons from "./SocialButtons";
+import SurpriseMeBtn from "./SurpriseMeBtn";
 
 export default function Navbar() {
     return (

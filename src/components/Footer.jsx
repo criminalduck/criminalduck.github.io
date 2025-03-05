@@ -2,8 +2,8 @@ import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCode, faCompass, faEnvelope, faFire, faFolderOpen } from "@fortawesome/free-solid-svg-icons";
 
-import SocialButtons from "./SocialButtons.jsx";
-import ProjectsLink from "./ProjectsLink.jsx";
+import SocialButtons from "./SocialButtons";
+import ProjectsLink from "./ProjectsLink";
 
 import displayIds from "../data/display-ids.json";
 import projData from "../data/proj-data.json";

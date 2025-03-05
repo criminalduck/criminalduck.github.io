@@ -1,19 +1,19 @@
 import { Suspense, lazy, useEffect, useState } from "react";
 import { Link, useParams, useSearchParams } from "react-router-dom";
+import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
+import {faArrowLeft} from "@fortawesome/free-solid-svg-icons";
 
-import ProjectList from "../components/ProjectList.jsx";
-import NotFoundPage from "./NotFoundPage.jsx";
+import ProjectList from "../components/ProjectList";
+import NotFoundPage from "./NotFoundPage";
+import Loading from "../components/Loading";
 
 import '../styles/projects-list.css';
 import projData from "../data/proj-data.json";
-import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
-import {faArrowLeft} from "@fortawesome/free-solid-svg-icons";
-import Loading from "../components/Loading.jsx";
 
 const DynamicProject = ({ projectId }) => {
     try {
         const ProjectComponent = lazy(() =>
-            import(`./pages/projects/${projectId}Project.jsx`)
+            import(`./pages/projects/${projectId}Project`)
         );
         return <ProjectComponent />;
     } catch (error) {

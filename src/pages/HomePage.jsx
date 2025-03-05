@@ -1,5 +1,5 @@
-import About from "./sections/About.jsx";
-import Home from "./sections/Home.jsx";
+import About from "./sections/About";
+import Home from "./sections/Home";
 
 export default function HomePage() {
     return (

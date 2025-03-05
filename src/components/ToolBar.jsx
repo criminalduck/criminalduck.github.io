@@ -2,7 +2,7 @@ import {useState} from "react";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faBorderAll, faCaretRight, faGear, faList} from "@fortawesome/free-solid-svg-icons";
 
-import FilterMenu from "./FilterMenu.jsx";
+import FilterMenu from "./FilterMenu";
 import SearchBar from "./SearchBar";
 
 export default function ToolBar({ onSearch, onLayoutChange, activeFilters, setActiveFilters, availableFilters }) {
