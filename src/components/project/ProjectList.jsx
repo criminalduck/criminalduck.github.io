@@ -1,11 +1,11 @@
 import {useEffect, useState} from "react";
 
-import ToolBar from "./ToolBar";
-import ProjectItem from "./ProjectItem";
-import ViewMore from "./ViewMore";
-import ErrorProjNoneFound from "./ErrorProjNoneFound";
+import ToolBar from "./ToolBar.jsx";
+import ProjectItem from "./ProjectItem.jsx";
+import ViewMore from "./ViewMore.jsx";
+import ErrorProjNoneFound from "../errors/ErrorProjNoneFound.jsx";
 
-import projData from "../data/proj-data.json";
+import projData from "/public/data/proj-data.json";
 
 export default function ProjectList({ searchParams }) {
     const [filteredData, setFilteredData] = useState(projData);

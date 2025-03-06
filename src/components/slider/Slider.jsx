@@ -2,14 +2,14 @@ import {useState, useEffect, useRef} from "react";
 import { faArrowLeft, faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-import SlideItem from "./SlideItem";
-import Bullet from "./Bullet";
-import ErrorLoadDisplayFailed from "./ErrorLoadDisplayFailed";
-import Loading from "./Loading";
+import SlideItem from "./SlideItem.jsx";
+import Bullet from "./Bullet.jsx";
+import ErrorLoadDisplayFailed from "../errors/ErrorLoadDisplayFailed.jsx";
+import Loading from "../main/Loading.jsx";
 
-import '../styles/slider.css'
-import projData from "../data/proj-data.json";
-import displayIds from "../data/display-ids.json"
+import '../../styles/slider.css'
+import projData from "/public/data/proj-data.json";
+import displayIds from "/public/data/display-ids.json"
 
 export default function Slider() {
     const [currentIndex, setCurrentIndex] = useState(0);

@@ -3,17 +3,17 @@ import { Link, useParams, useSearchParams } from "react-router-dom";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faArrowLeft} from "@fortawesome/free-solid-svg-icons";
 
-import ProjectList from "../components/ProjectList";
+import ProjectList from "../components/project/ProjectList.jsx";
 import NotFoundPage from "./NotFoundPage";
-import Loading from "../components/Loading";
+import Loading from "../components/main/Loading.jsx";
 
 import '../styles/projects-list.css';
-import projData from "../data/proj-data.json";
+import projData from "/public/data/proj-data.json";
 
 const DynamicProject = ({ projectId }) => {
     try {
         const ProjectComponent = lazy(() =>
-            import(`./pages/projects/${projectId}Project`)
+            import(`./pages/projects/${projectId}Project.jsx`)
         );
         return <ProjectComponent />;
     } catch (error) {
@@ -28,7 +28,7 @@ export default function ProjectsPage() {
     const [project, setProject] = useState(null);
 
     useEffect(() => {
-        console.log("Rendering ProjectsPage with projectId:", projectId);
+        /* console.log("Rendering ProjectsPage with projectId:", projectId); */
         if (projectId) {
             const selectedProject = projData.find((item) => item.id === projectId) || null;
             setProject(selectedProject);

@@ -2,11 +2,11 @@ import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCode, faCompass, faEnvelope, faFire, faFolderOpen } from "@fortawesome/free-solid-svg-icons";
 
-import SocialButtons from "./SocialButtons";
-import ProjectsLink from "./ProjectsLink";
+import SocialButtons from "./SocialButtons.jsx";
+import ProjectsLink from "../project/ProjectsLink.jsx";
 
-import displayIds from "../data/display-ids.json";
-import projData from "../data/proj-data.json";
+import displayIds from "/public/data/display-ids.json";
+import projData from "/public/data/proj-data.json";
 
 export default function Footer() {
     return (

@@ -2,31 +2,31 @@
   {
     "title": "Item 1",
     "description": "Description Academic paragraphs are usually between 200 and 300 words long (they vary more than this but it is a useful guide). The important thing is that they should be long enough to contain all the above material. Only move onto a new paragraph if you are making a new point.",
-    "images": ["tofe-cover-normal.png", "tofe-background-normal.png",  "tofe-cover-normal.png"],
+    "images": ["tofe-cover.webp", "tofe-background.webp",  "tofe-cover.webp"],
     "id": "item-1",
     "date": "07/02/24",
-    "tags": ["unity", "java"]
+    "tags": ["gamedev", "unity", "java"]
   },
   {
     "title": "Item 2",
     "description": "Description for Item 2",
-    "images": ["tofe-cover-normal.png", "tofe-background-normal.png", "tofe-cover-normal.png"],
+    "images": ["tofe-cover.webp", "tofe-background.webp", "tofe-cover.webp"],
     "id": "item-2",
     "date": "07/02/24",
-    "tags": ["unity"]
+    "tags": ["mod", "unity"]
   },
   {
     "title": "Item 3",
     "description": "Description for Item 3",
-    "images": ["tofe-cover-normal.png", "tofe-background-normal.png", "tofe-cover-normal.png"],
+    "images": ["tofe-cover.webp", "tofe-background.webp", "tofe-cover.webp"],
     "id": "item-3",
     "date": "07/02/24",
-    "tags": ["java"]
+    "tags": ["website", "java"]
   },
   {
     "title": "Item 4",
     "description": "Description for Item 4",
-    "images": ["tofe-cover-normal.png", "tofe-background-normal.png", "tofe-cover-normal.png"],
+    "images": ["tofe-cover.webp", "tofe-background.webp", "tofe-cover.webp"],
     "id": "item-4",
     "date": "07/02/24",
     "tags": ["unity"]
@@ -34,7 +34,7 @@
   {
     "title": "Item 5",
     "description": "Description for Item 5",
-    "images": ["tofe-cover-normal.png", "tofe-background-normal.png", "tofe-cover-normal.png"],
+    "images": ["tofe-cover.webp", "tofe-background.webp", "tofe-cover.webp"],
     "id": "item-5",
     "date": "07/02/24",
     "tags": ["java"]
@@ -42,7 +42,7 @@
   {
     "title": "Item 6",
     "description": "Description for Item 2",
-    "images": ["tofe-cover-normal.png"],
+    "images": ["tofe-cover.webp"],
     "id": "item-6",
     "date": "07/02/24",
     "tags": ["unity"]
@@ -50,7 +50,7 @@
   {
     "title": "Item 7",
     "description": "Description for Item 2",
-    "images": ["tofe-cover-normal.png"],
+    "images": ["tofe-cover.webp"],
     "id": "item-7",
     "date": "07/02/24",
     "tags": ["unity"]
@@ -58,7 +58,7 @@
   {
     "title": "Item 8",
     "description": "Description for Item 1",
-    "images": ["tofe-cover-normal.png"],
+    "images": ["tofe-cover.webp"],
     "id": "item-8",
     "date": "07/02/24",
     "tags": ["java"]
@@ -66,7 +66,7 @@
   {
     "title": "Item 9",
     "description": "Description for Item 2",
-    "images": ["tofe-cover-normal.png"],
+    "images": ["tofe-cover.webp"],
     "id": "item-9",
     "date": "07/02/24",
     "tags": ["unity"]
@@ -74,7 +74,7 @@
   {
     "title": "Item 10",
     "description": "Description for Item 2",
-    "images": ["tofe-cover-normal.png"],
+    "images": ["tofe-cover.webp"],
     "id": "item-10",
     "date": "07/02/24",
     "tags": ["unity"]
@@ -82,7 +82,7 @@
   {
     "title": "Item 11",
     "description": "Description for Item 2",
-    "images": ["tofe-cover-normal.png"],
+    "images": ["tofe-cover.webp"],
     "id": "item-11",
     "date": "07/02/24",
     "tags": ["unity"]
@@ -90,7 +90,7 @@
   {
     "title": "Item 12",
     "description": "Description for Item 1",
-    "images": ["tofe-cover-normal.png"],
+    "images": ["tofe-cover.webp"],
     "id": "item-12",
     "date": "07/02/24",
     "tags": ["java"]
@@ -98,7 +98,7 @@
   {
     "title": "Item 13",
     "description": "Description for Item 2",
-    "images": ["tofe-cover-normal.png"],
+    "images": ["tofe-cover.webp"],
     "id": "item-13",
     "date": "07/02/24",
     "tags": ["unity"]

@@ -3,7 +3,7 @@ import {useState} from "react";
 import { faBolt } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-import projData from "../data/proj-data.json";
+import projData from "/public/data/proj-data.json";
 
 export default function SurpriseMeBtn() {
     const [randomId, setRandomId] = useState(null);

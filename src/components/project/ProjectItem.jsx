@@ -15,7 +15,7 @@ export default function ProjectItem({ item, searchResultId }) {
                     <li><button className="btn btn-secondary"><FontAwesomeIcon className="icon" icon={faThumbsDown}/></button></li>
                 </ul>
             </div>
-            <img src={`../src/assets/${item.images[0] || "default-image.jpg"}`} alt={item.id} loading="lazy" />
+            <img src={`/images/${item.images[0] || "default-image.webp"}`} alt={item.id} loading="lazy" />
         </li>
     );
 }

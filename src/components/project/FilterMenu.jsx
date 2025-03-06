@@ -3,8 +3,8 @@ import React from "react";
 import {faFilterCircleXmark, faShuffle, faTag} from "@fortawesome/free-solid-svg-icons";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 
-import filtersData from "../data/filters.json";
-import Loading from "./Loading";
+import filtersData from "/public/data/filters.json";
+import Loading from "../main/Loading.jsx";
 
 export default function FilterMenu({ isDropdownOpen, activeFilters, setActiveFilters, availableFilters }) {
 

@@ -1,15 +1,21 @@
-import {useState} from "react";
+import {useEffect, useState} from "react";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faBorderAll, faCaretRight, faGear, faList} from "@fortawesome/free-solid-svg-icons";
 
-import FilterMenu from "./FilterMenu";
-import SearchBar from "./SearchBar";
+import FilterMenu from "./FilterMenu.jsx";
+import SearchBar from "../other/SearchBar.jsx";
 
 export default function ToolBar({ onSearch, onLayoutChange, activeFilters, setActiveFilters, availableFilters }) {
     const [isDropdownOpen, setIsDropdownOpen] = useState(false);
     const toggleDropdown = () => {
         setIsDropdownOpen(prev => !prev);
     };
+
+    useEffect(() => {
+        if (activeFilters.length > 0) {
+            setIsDropdownOpen(true);
+        }
+    }, [activeFilters]);
 
     const [layoutMode, setLayoutMode] = useState('list');
     const toggleLayout = (mode) => {
