@@ -38,6 +38,9 @@
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     color-scheme: dark light;
+
+    background-color: var(--main-bg);
+    color: var(--text-light);
 }
 @media (prefers-color-scheme: dark) {
     :root {
@@ -52,9 +55,6 @@
         --shadow-dark: rgba(0, 0, 0, 0.35);
         --main-bg: #15181b;
         --border-radius: 0.6rem;
-
-        background-color: var(--main-bg);
-        color: var(--text-light);
     }
 }
 
