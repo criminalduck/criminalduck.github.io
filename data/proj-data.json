@@ -5,7 +5,7 @@
     "images": ["tofe-cover.webp", "tofe-background.webp",  "tofe-cover.webp"],
     "id": "item-1",
     "date": "07/02/24",
-    "tags": ["unity", "java"]
+    "tags": ["gamedev", "unity", "java"]
   },
   {
     "title": "Item 2",
@@ -13,7 +13,7 @@
     "images": ["tofe-cover.webp", "tofe-background.webp", "tofe-cover.webp"],
     "id": "item-2",
     "date": "07/02/24",
-    "tags": ["unity"]
+    "tags": ["mod", "unity"]
   },
   {
     "title": "Item 3",
@@ -21,7 +21,7 @@
     "images": ["tofe-cover.webp", "tofe-background.webp", "tofe-cover.webp"],
     "id": "item-3",
     "date": "07/02/24",
-    "tags": ["java"]
+    "tags": ["website", "java"]
   },
   {
     "title": "Item 4",
