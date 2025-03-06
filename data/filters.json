@@ -1,0 +1,20 @@
+{
+  "field": [
+    { "id": "gamedev", "label": "Games" },
+    { "id": "website", "label": "Websites" },
+    { "id": "mod", "label": "Mods" }
+  ],
+  "software": [
+    { "id": "unity", "label": "Unity" },
+    { "id": "unreal", "label": "Unreal" },
+    { "id": "forge", "label": "Forge" }
+  ],
+  "languages": [
+    { "id": "java", "label": "Java" },
+    { "id": "python", "label": "Python" },
+    { "id": "c#", "label": "C#" },
+    { "id": "html", "label": "HTML" },
+    { "id": "css", "label": "CSS" },
+    { "id": "javascript", "label": "JS" }
+  ]
+}
