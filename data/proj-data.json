@@ -4,7 +4,8 @@
     "description": "Description Academic paragraphs are usually between 200 and 300 words long (they vary more than this but it is a useful guide). The important thing is that they should be long enough to contain all the above material. Only move onto a new paragraph if you are making a new point.",
     "images": ["tofe-cover.webp", "tofe-background.webp",  "tofe-cover.webp"],
     "id": "item-1",
-    "date": "07/02/24",
+    "date": "2025-06-22",
+    "status": "upcoming",
     "tags": ["gamedev", "unity", "java"]
   },
   {
@@ -12,7 +13,8 @@
     "description": "Description for Item 2",
     "images": ["tofe-cover.webp", "tofe-background.webp", "tofe-cover.webp"],
     "id": "item-2",
-    "date": "07/02/24",
+    "date": "",
+    "status": "upcoming",
     "tags": ["mod", "unity"]
   },
   {
@@ -20,7 +22,8 @@
     "description": "Description for Item 3",
     "images": ["tofe-cover.webp", "tofe-background.webp", "tofe-cover.webp"],
     "id": "item-3",
-    "date": "07/02/24",
+    "date": "",
+    "status": "upcoming",
     "tags": ["website", "java"]
   },
   {
@@ -28,7 +31,8 @@
     "description": "Description for Item 4",
     "images": ["tofe-cover.webp", "tofe-background.webp", "tofe-cover.webp"],
     "id": "item-4",
-    "date": "07/02/24",
+    "date": "2025-03-06",
+    "status": "released",
     "tags": ["unity"]
   },
   {
@@ -36,7 +40,8 @@
     "description": "Description for Item 5",
     "images": ["tofe-cover.webp", "tofe-background.webp", "tofe-cover.webp"],
     "id": "item-5",
-    "date": "07/02/24",
+    "date": "2025-03-06",
+    "status": "released",
     "tags": ["java"]
   },
   {
@@ -44,7 +49,8 @@
     "description": "Description for Item 2",
     "images": ["tofe-cover.webp"],
     "id": "item-6",
-    "date": "07/02/24",
+    "date": "2025-03-06",
+    "status": "released",
     "tags": ["unity"]
   },
   {
@@ -52,7 +58,8 @@
     "description": "Description for Item 2",
     "images": ["tofe-cover.webp"],
     "id": "item-7",
-    "date": "07/02/24",
+    "date": "2025-01-07",
+    "status": "released",
     "tags": ["unity"]
   },
   {
@@ -60,7 +67,8 @@
     "description": "Description for Item 1",
     "images": ["tofe-cover.webp"],
     "id": "item-8",
-    "date": "07/02/24",
+    "date": "2025-01-07",
+    "status": "released",
     "tags": ["java"]
   },
   {
@@ -68,7 +76,8 @@
     "description": "Description for Item 2",
     "images": ["tofe-cover.webp"],
     "id": "item-9",
-    "date": "07/02/24",
+    "date": "2025-01-07",
+    "status": "released",
     "tags": ["unity"]
   },
   {
@@ -76,7 +85,8 @@
     "description": "Description for Item 2",
     "images": ["tofe-cover.webp"],
     "id": "item-10",
-    "date": "07/02/24",
+    "date": "2025-01-07",
+    "status": "released",
     "tags": ["unity"]
   },
   {
@@ -84,7 +94,8 @@
     "description": "Description for Item 2",
     "images": ["tofe-cover.webp"],
     "id": "item-11",
-    "date": "07/02/24",
+    "date": "2025-01-07",
+    "status": "released",
     "tags": ["unity"]
   },
   {
@@ -92,7 +103,8 @@
     "description": "Description for Item 1",
     "images": ["tofe-cover.webp"],
     "id": "item-12",
-    "date": "07/02/24",
+    "date": "2025-01-07",
+    "status": "released",
     "tags": ["java"]
   },
   {
@@ -100,7 +112,8 @@
     "description": "Description for Item 2",
     "images": ["tofe-cover.webp"],
     "id": "item-13",
-    "date": "07/02/24",
+    "date": "2025-01-07",
+    "status": "released",
     "tags": ["unity"]
   }
 ]
