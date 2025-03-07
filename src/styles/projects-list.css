@@ -1,6 +1,11 @@
 /* Projects ====================================================================== */
 #projects {
     .container {
+        min-height: 53vh;
+
+        &.grid {
+            min-width: 80rem;
+        }
 
         h1 {
             margin-bottom: 2.5rem;
@@ -156,9 +161,35 @@
                         gap: 0.5rem;
                         line-height: 1.4rem;
 
-                        span {
-                            font-size: 1.15rem;
+                        span.sub-text {
                             color: var(--text-dark);
+                            font-size: 1.15rem;
+                        }
+
+                        .banner {
+                            display: flex;
+                            align-items: center;
+                            border-radius: var(--border-radius);
+                            color: var(--text-light);
+                            padding: 0.2rem 0.7rem;
+                            width: fit-content;
+                            flex-grow: 0;
+                            margin-left: 0.8rem;
+                            font-weight: bold;
+
+                            .icon {
+                                margin-right: 0.4rem;
+                            }
+
+                            &.coming {
+                                background-color: var(--purple-accent);
+                            }
+                            &.new {
+                                background-color: var(--red-accent);
+                            }
+                            &.dev {
+                                background-color: var(--green-accent);
+                            }
                         }
                     }
 
@@ -166,6 +197,25 @@
                         margin: 0;
                         flex-grow: 1;
                         line-height: 1.3rem;
+                    }
+
+                    .upcoming-notice {
+                        margin: 0;
+                        text-align: center;
+                        line-height: 1rem;
+                        padding: 1rem 1.2rem 0.6rem 1rem;
+                        background-color: var(--primary-bg);
+                        border: none;
+                        border-radius: var(--border-radius);
+                        color: var(--highlight-bg);
+                        font-weight: bold;
+                        width: fit-content;
+
+                        span {
+                            color: var(--highlight-secondary-bg);
+                            margin-left: 0.5rem;
+                            font-size: 1.05rem;
+                        }
                     }
 
                     .buttons {

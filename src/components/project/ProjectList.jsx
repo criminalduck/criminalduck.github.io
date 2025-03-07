@@ -83,7 +83,7 @@ export default function ProjectList({ searchParams }) {
     };
 
     return(
-        <div className="container">
+        <div className={`container ${layoutMode}`}>
             <h1>PROJECTS</h1>
             <ToolBar onSearch={handleSearch} onLayoutChange={handleLayoutChange} activeFilters={activeFilters} setActiveFilters={setActiveFilters} availableFilters={availableFilters} searchParams={searchParams} />
             <>

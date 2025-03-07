@@ -1,4 +1,4 @@
-import {useState} from "react";
+import {useEffect, useState} from "react";
 import React from "react";
 import {faFilterCircleXmark, faShuffle, faTag} from "@fortawesome/free-solid-svg-icons";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
@@ -24,9 +24,11 @@ export default function FilterMenu({ isDropdownOpen, activeFilters, setActiveFil
         setPreviousRandomFilter(randomFilter);
     };
 
-    if (!filtersData) {
-        return <Loading/>;
-    }
+    useEffect(() => {
+        if (!filtersData) {
+            return <Loading/>;
+        }
+    })
 
     return (
         <div id="filter-menu" className={isDropdownOpen ? "dropdown-show" : "dropdown"}>

@@ -54,6 +54,9 @@
         --shadow-light: rgba(0, 0, 0, 0.1);
         --shadow-dark: rgba(0, 0, 0, 0.35);
         --main-bg: #15181b;
+        --red-accent: #d9534f;
+        --purple-accent: #8f4bda;
+        --green-accent: #5cb85c;
         --border-radius: 0.6rem;
     }
 }
