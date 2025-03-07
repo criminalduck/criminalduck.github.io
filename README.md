@@ -1,8 +1,11 @@
-# React + Vite
+# WebPortfolio 
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This website was built as a way to show my projects, in many fields, in a user-friendly and documentational way.
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### This website was made using :
+- React v19 + various modules
+- Font Awesome Icons
+- Webstorm (IDE) & Vite
+- FramerMotion
+- TailwindCSS, PostCSS, ESLint
+- GH-Pages
