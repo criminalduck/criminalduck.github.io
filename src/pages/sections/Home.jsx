@@ -25,9 +25,6 @@ export default function Home() {
                         <div className="tab-list">
                             {displayIds.slice(0, 6).map(id => {
                                 const project = projData.find((item) => item.id === id)
-                                {/*<ProjectsLink className="filter-tab" key={id} projectId={id} style={{ backgroundImage: `url('/images/${project.images[1] || "default-image.webp"}')` }}>
-                                        <h3>{project.title}</h3>
-                                    </ProjectsLink>*/}
                                 return (
                                     <ProjectsLink className="filter-tab" key={id} projectId={id}>
                                         <img src={`/images/${project.images[0] || "default-image.webp"}`} alt={project.id + "-cover"} loading='lazy'/>

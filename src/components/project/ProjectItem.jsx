@@ -1,5 +1,5 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {faCircleInfo, faThumbsDown, faThumbsUp} from "@fortawesome/free-solid-svg-icons";
+import {faCircleInfo} from "@fortawesome/free-solid-svg-icons";
 
 import ProjectsLink from "./ProjectsLink";
 import ProjectBanners from "./ProjectBanners";
@@ -18,13 +18,9 @@ export default function ProjectItem({ item, searchResultId }) {
                         Estimated Release Date : <span>{formattedDate}</span>
                     </p>
                 )) :
-                    <ul className="buttons">
-                        <li><ProjectsLink className="btn btn-secondary" projectId={item.id}>
-                            <FontAwesomeIcon className="icon" icon={faCircleInfo}/> More Info
-                        </ProjectsLink></li>
-                        <li><button className="btn btn-secondary"><FontAwesomeIcon className="icon" icon={faThumbsUp}/></button></li>
-                        <li><button className="btn btn-secondary"><FontAwesomeIcon className="icon" icon={faThumbsDown}/></button></li>
-                    </ul>
+                    <li><ProjectsLink className="btn btn-secondary" projectId={item.id}>
+                        <FontAwesomeIcon className="icon" icon={faCircleInfo}/> More Info
+                    </ProjectsLink></li>
                 }
             </div>
             <img src={`/images/${item.images[0] || "default-image.webp"}`} alt={item.id} loading="lazy" />

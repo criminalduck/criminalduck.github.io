@@ -59,7 +59,7 @@
     "images": ["tofe-cover.webp"],
     "id": "item-7",
     "date": "2025-01-07",
-    "status": "released",
+    "status": "dev",
     "tags": ["unity"]
   },
   {
@@ -68,7 +68,7 @@
     "images": ["tofe-cover.webp"],
     "id": "item-8",
     "date": "2025-01-07",
-    "status": "released",
+    "status": "dev",
     "tags": ["java"]
   },
   {

@@ -1,6 +1,13 @@
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faCode, faCompass, faEnvelope, faFire, faFolderOpen } from "@fortawesome/free-solid-svg-icons";
+import {
+    faBug,
+    faCode,
+    faCompass,
+    faEnvelope,
+    faFire,
+    faFolderOpen,
+} from "@fortawesome/free-solid-svg-icons";
 
 import SocialButtons from "./SocialButtons.jsx";
 import ProjectsLink from "../project/ProjectsLink.jsx";
@@ -8,6 +15,7 @@ import useIsNew from "../../hooke/useIsNew.js";
 
 import displayIds from "/public/data/display-ids.json";
 import projData from "/public/data/proj-data.json";
+import FeedbackPopup from "./FeedbackPopup.jsx";
 
 export default function Footer() {
     const newProjects = projData.filter((project) => useIsNew(project.date));
@@ -53,7 +61,14 @@ export default function Footer() {
                         <li><Link className="btn btn-primary" to="/#home">Home</Link></li>
                     </ul>*/}
                 </ul>
-                <p><FontAwesomeIcon className="icon" icon={faEnvelope}/>Contact Us at studio@email.com</p>
+                <FeedbackPopup projectID={"null"}>
+                    {({ openModal }) => (
+                        <div className="options">
+                            <p onClick={() => openModal("contact")}><FontAwesomeIcon className="icon" icon={faEnvelope}/>Contact Us at studio@email.com</p>
+                            <p onClick={() => openModal("bug")}><FontAwesomeIcon className="icon" icon={faBug}/>Report Bugs for Website or Projects</p>
+                        </div>
+                    )}
+                </FeedbackPopup>
             </div>
         </section>
     );
