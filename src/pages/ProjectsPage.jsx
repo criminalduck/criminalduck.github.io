@@ -7,7 +7,7 @@ import ProjectList from "../components/project/ProjectList.jsx";
 import NotFoundPage from "./NotFoundPage";
 import Loading from "../components/main/Loading.jsx";
 
-import '../styles/projects-list.css';
+import '../styles/projects.css';
 import projData from "/public/data/proj-data.json";
 import FeedbackPopup from "../components/main/FeedbackPopup.jsx";
 import RecommendProjects from "../components/project/RecommendProjects.jsx";
@@ -85,8 +85,8 @@ export default function ProjectsPage() {
                     <Link className="btn return-btn" to="/projects"><FontAwesomeIcon className="icon" icon={faArrowLeft}/>Back to Projects</Link>
                     <DynamicProject projectId={project.id} />
                     <div className="section-spacer"></div>
-                    <RecommendProjects/>
-                </div>
+                    <RecommendProjects projectTags={project.tags} projectId={project.id}/>
+            </div>
             </section>
         );
     }

@@ -5,6 +5,7 @@ import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 
 import filtersData from "/public/data/filters.json";
 import Loading from "../main/Loading.jsx";
+import {Tooltip} from "react-tooltip";
 
 export default function FilterMenu({ isDropdownOpen, activeFilters, setActiveFilters, availableFilters }) {
 
@@ -33,12 +34,14 @@ export default function FilterMenu({ isDropdownOpen, activeFilters, setActiveFil
     return (
         <div id="filter-menu" className={isDropdownOpen ? "dropdown-show" : "dropdown"}>
             <li className="tools">
-                <button id="clear-filter" className="btn btn-secondary" onClick={() => setActiveFilters([])}>
+                <button id="clear-filter" className="btn btn-secondary" onClick={() => setActiveFilters([])} data-tooltip-id="clear-tooltip" data-tooltip-content="Clear Filters">
                     <FontAwesomeIcon className="icon" icon={faFilterCircleXmark}/>
                 </button>
-                <button id="random-filter" className="btn btn-secondary" onClick={() => handleRandomFilter()}>
+                <Tooltip id="clear-tooltip" />
+                <button id="random-filter" className="btn btn-secondary" onClick={() => handleRandomFilter()} data-tooltip-id="random-tooltip" data-tooltip-content="Random Filter">
                     <FontAwesomeIcon className="icon" icon={faShuffle}/>
                 </button>
+                <Tooltip id="random-tooltip" />
             </li>
 
             {Object.keys(filtersData).map((category, index, array) => (

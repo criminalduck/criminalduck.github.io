@@ -301,6 +301,58 @@
                 }
             }
         }
+
+        #slider {
+            h1 {
+                margin-bottom: 0;
+            }
+
+            .project-bullet-list {
+                display: flex;
+                width: 100%;
+                justify-content: space-between;
+                padding: 1.5rem 0;
+                gap: 1rem;
+
+                .project-bullet {
+                    background-color: var(--primary-bg);
+                    border: none;
+                    border-radius: var(--border-radius);
+                    flex-grow: 1;
+                    height: fit-content;
+                    transition: 0.3s ease;
+                    padding: 1.2rem;
+                    cursor: pointer;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    gap: 1rem;
+
+                    h2, h3 {
+                        text-align: center;
+                        font-size: 1.8rem;
+                    }
+                    h3 {
+                        font-size: 1.2rem;
+                        border: solid 0.3rem var(--main-bg);
+                        border-radius: 0.4rem;
+                        background-color: var(--shadow-dark);
+                        padding: 0.5rem 1.4rem;
+                        width: fit-content;
+                        margin: auto;
+                    }
+                    img {
+                        border: solid 0.3rem var(--main-bg);
+                        border-radius: 0.4rem;
+                    }
+
+                    &.active {
+                        background-color: var(--secondary-bg);
+                        transform: translateY(-5px);
+                    }
+                }
+            }
+        }
     }
     .layout-grid {
         display: grid;
