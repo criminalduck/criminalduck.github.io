@@ -1,0 +1,1 @@
+import{p as n,j as s,a as t}from"./index-CFSvJhfZ.js";function d({projectId:r}){const i=n.find(e=>e.id===r);return s("div",{children:[t("h1",{children:i.title}),t("p",{children:i.description})]})}export{d as default};
